@@ -1,7 +1,8 @@
 const http = require('http')
+const dat = require('./data')
 http.createServer((req, res)=>{
-    res.write("<h1>Hello azan khan</h1>")
-    res.write("<h1>Hello, I am developer(InshaAllah)</h1>")
+    res.writeHead(200,{'Content-Type':'application/json'});
+    res.write(JSON.stringify(dat));
     res.end();
 }).listen(5000);
 console.log("new changes")
