@@ -4,7 +4,8 @@
   "description": "a node js tutorial",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "keywords": [
     "Khan"
@@ -15,5 +16,8 @@
     "chalk": "^5.3.0",
     "colors": "^1.4.0",
     "simple-node-logger": "^21.8.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
